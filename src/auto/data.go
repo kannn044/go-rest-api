@@ -2,7 +2,6 @@ package auto
 
 import (
 	"api/models"
-	"fmt"
 )
 
 var users = []models.User {

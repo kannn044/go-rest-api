@@ -1,12 +1,12 @@
 package console
 
 import (
+	"encoding/json"
 	"fmt"
 	"log"
-	"auto"
 )
 
-func Pretty(data, interface{}) {
+func Pretty(data interface{}) {
 	b, err := json.MarshalIndent(data, "", " ")
 	if err != nil {
 		log.Println(err)

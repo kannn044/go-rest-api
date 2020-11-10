@@ -24,7 +24,7 @@ func Load() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
+ 
 	for _, user := range users {
 		err = db.Debug().Model(&models.User{}).Create(&user).Error
 		if err != nil {
